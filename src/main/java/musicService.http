@@ -1,0 +1,85 @@
+### User anlegen
+POST http://localhost:8888/users
+Content-Type: application/json
+
+{
+  "username": "MaxMusti",
+  "email": "max@mustermann.de"
+}
+
+### User anlegen
+POST http://localhost:8888/users
+Content-Type: application/json
+
+{
+  "username": "tomatoturban",
+  "email": "tomatoturban@gmail.com"
+}
+
+### User anlegen
+POST http://localhost:8888/users
+Content-Type: application/json
+
+{
+  "username": "MaxMusti",
+  "email": "max@mustermann.de"
+}
+
+### Alle User erhalten
+GET http://localhost:8888/users
+Accept: application/json
+
+### User mit ID 1 erhalten
+GET http://localhost:8888/users/1
+Accept: application/json
+
+### User mit ID 1 löschen
+DELETE http://localhost:8888/users/1
+
+### Alle User erhalten
+GET http://localhost:8888/users
+Accept: application/json
+
+### Song anlegen
+POST http://localhost:8888/songs
+Content-Type: application/json
+
+{
+  "name": "Hotel Room Service",
+  "genre": "HipHop"
+}
+
+### Song anlegen
+POST http://localhost:8888/songs
+Content-Type: application/json
+
+{
+  "name": "Give It Up to Me",
+  "genre": "HipHop"
+}
+
+### Song zuordnen
+PUT http://localhost:8888/users/2/songs/1
+Accept: application/json
+
+### Song zuordnen
+PUT http://localhost:8888/users/2/songs/2
+Accept: application/json
+
+### Alle User erhalten
+GET http://localhost:8888/users
+Accept: application/json
+
+### Song 1 von User 2 entfernen
+DELETE http://localhost:8888/users/2/songs/1
+
+### Alle User erhalten
+GET http://localhost:8888/users
+Accept: application/json
+
+### Song 2 löschen
+DELETE http://localhost:8888/songs/2
+
+### Alle User erhalten
+GET http://localhost:8888/users
+Accept: application/json
